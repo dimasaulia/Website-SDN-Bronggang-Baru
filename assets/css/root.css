@@ -1,0 +1,73 @@
+:root{
+    font-size           : 20px;
+    --textColorOne      : #2B546A;
+    --textColorTwo      : #4D74DE;
+    --textColorThree    : #202D51;
+    --backgroundColorOne: #F5F7FA;
+    --backgroundColorTwo: #FAFAFA;
+    --shadow            : 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Light.ttf);
+    font-weight: lighter;   
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Medium.ttf);
+    font-weight: normal;   
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: bold;   
+}
+
+html , body{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
+    font-family: Quicksand, Arial;
+    background-color: var(--backgroundColorOne);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0px;
+    font-weight: bold;
+    color: var(--textColorThree);
+}
+
+p, a, ul, li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: var(--textColorOne);
+    font-weight: normal;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 980px) {
+    :root{
+        font-size: 18px;
+    }
+
+    body{
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    :root{
+        font-size: 16px;
+    }
+
+    body{
+        background-color: magenta;
+    }
+}
