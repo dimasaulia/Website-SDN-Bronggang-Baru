@@ -58,7 +58,7 @@ p, a, ul, li{
     }
 
     body{
-        background-color: blue;
+        /* background-color: blue; */
     }
 }
 
@@ -68,6 +68,6 @@ p, a, ul, li{
     }
 
     body{
-        background-color: magenta;
+        /* background-color: magenta; */
     }
 }
