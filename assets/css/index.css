@@ -18,10 +18,6 @@ header p{
     margin: 0.75rem 0;
 }
 
-.textBlue{
-    color: var(--textColorTwo);
-}
-
 .inputWrapper{
     position:relative;
     /* background: pink; */

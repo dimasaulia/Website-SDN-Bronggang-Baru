@@ -1,7 +1,7 @@
 :root{
     font-size           : 20px;
     --textColorOne      : #2B546A;
-    --        : #4D74DE;
+    --textColorTwo      : #4D74DE;
     --textColorThree    : #202D51;
     --backgroundColorOne: #F5F7FA;
     --backgroundColorTwo: #FAFAFA;
@@ -62,7 +62,7 @@ p, a, ul, li{
     }
 
     body{
-        background-color: blue;
+        /* background-color: blue; */
     }
 }
 
@@ -72,6 +72,6 @@ p, a, ul, li{
     }
 
     body{
-        background-color: magenta;
+        /* background-color: magenta; */
     }
 }

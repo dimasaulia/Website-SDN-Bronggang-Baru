@@ -1,0 +1,221 @@
+header{
+    width:80%;
+    height: 15rem;
+    max-width: 1450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto 0  auto;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    background: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+}
+
+.description{
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h1{
+    font-size: 3rem;
+}
+
+.description p{
+    width: 28rem;
+}
+
+.illustration{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    margin-top: 1rem;
+}
+
+.illustration img{
+    display: block;
+    max-width: 15rem;
+}
+
+main{
+    width: 80%;
+    margin: 2.5rem auto 5rem auto;
+    /* background: blue; */
+}
+
+.tableHead, .tableData{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: var(--shadow);
+}
+
+.tableData{
+    margin: 1rem 0;
+}
+
+.tableData img{
+    display: block;
+    margin: 0 auto;
+    max-width: 20px;
+    opacity: 0.65;
+}
+
+.tableHead h2{
+    background: rgba(77, 116, 222, 0.5);
+    color: var(--backgroundColorTwo);
+    height: 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableHead h4{
+    opacity: 0.5;
+}
+
+.tableHead ul, .tableData ul{
+    width: 100%;
+    background: var(--backgroundColorTwo);
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+.tableHead ul li, .tableData ul li{
+    width: 25%;
+    text-align: center;
+}
+
+.tableData ul li:last-child{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.tableData ul li:last-child a{
+    padding: 0 10px;
+}
+
+.helpDetail:hover::after{
+    content: "Lihat Detail Data";
+    position: absolute;
+    color: var(--backgroundColorOne);
+    background: var(--textColorThree);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.helpEdit:hover::after{
+    content: "Edit Data";
+    position: absolute;
+    color: var(--backgroundColorOne);
+    background: var(--textColorThree);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.helpDelete:hover::after{
+    content: "Hapus Data";
+    position: absolute;
+    color: var(--backgroundColorOne);
+    background: var(--textColorThree);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .illustration img{
+        max-width: 12rem;
+    }
+
+    .description p{
+        width: 20rem;
+    }        
+}
+
+@media only screen and (max-width: 880px) {
+    .illustration img{
+        max-width: 10rem;
+    }
+
+    .description p{
+        width: 18rem;
+    }  
+
+    .tempatLahir{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .description{
+        width: 100%;
+    }
+
+    .description h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .description p{
+        width: 100%;
+    }
+    .illustration{
+        width: 100%;
+    }
+
+    .gender{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .gender, .tanggalLahir{
+        display: none;
+    }
+
+    .tableHead ul li, .tableData ul li{
+        width: 50%;
+        text-align: start;
+    }
+
+    .tableHead ul li:last-child, .tableData ul li:last-child{
+        text-align: center;
+    }
+
+    .helpDetail:hover::after{
+        display: none;
+    }
+    
+    .helpEdit:hover::after{
+        display: none;
+    }
+    
+    .helpDelete:hover::after{
+        display: none;
+    }
+    
+}
