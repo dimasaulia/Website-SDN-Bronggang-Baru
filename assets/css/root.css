@@ -1,7 +1,7 @@
 :root{
     font-size           : 20px;
     --textColorOne      : #2B546A;
-    --textColorTwo      : #4D74DE;
+    --        : #4D74DE;
     --textColorThree    : #202D51;
     --backgroundColorOne: #F5F7FA;
     --backgroundColorTwo: #FAFAFA;
@@ -30,9 +30,9 @@ html , body{
     margin: 0px;
     padding: 0px;
     transition: all 0.5s ease-in-out;
-    overflow-x: hidden;
     font-family: Quicksand, Arial;
     background-color: var(--backgroundColorOne);
+    /* background: pink; */
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -51,6 +51,10 @@ p, a, ul, li{
     font-weight: normal;
 }
 
+.textBlue{
+    color: var(--textColorTwo);
+}
+
 /* MOBILE */
 @media only screen and (max-width: 980px) {
     :root{
@@ -58,7 +62,7 @@ p, a, ul, li{
     }
 
     body{
-        /* background-color: blue; */
+        background-color: blue;
     }
 }
 
@@ -68,6 +72,6 @@ p, a, ul, li{
     }
 
     body{
-        /* background-color: magenta; */
+        background-color: magenta;
     }
 }
