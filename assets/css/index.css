@@ -9,6 +9,8 @@ header{
     justify-content: center;
     margin: 3rem auto 0  auto;
     /* background: pink; */
+    box-shadow: none;
+    background-color: var(--backgroundColorOne);
 }
 
 header p{
@@ -59,7 +61,7 @@ input[type=text]:focus{
 .container{
     display: flex;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px;

@@ -1,0 +1,110 @@
+/* FILE CSS YANG AKAN ADA DI SETIAP FILE */
+
+/* TEXT BIRU */
+.textBlue{
+    color: var(--textColorTwo);
+}
+
+.textBlack{
+    color: var(--textColorThree);
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mt-2{
+    margin-bottom: 2rem;
+}
+
+/* BAGIAN HEADER */
+header{
+    width:80%;
+    height: 15rem;
+    max-width: 1450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem auto 0  auto;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    padding: 1rem;
+    overflow: hidden;
+    background: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+}
+
+.description{
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description h1{
+    font-size: 3rem;
+}
+
+.description p{
+    width: 28rem;
+}
+
+.illustration{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+}
+
+.illustration img{
+    display: block;
+    max-width: 15rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    .illustration img{
+        max-width: 12rem;
+    }
+
+    .description p{
+        width: 20rem;
+    }        
+}
+
+@media only screen and (max-width: 880px) {
+    .illustration img{
+        max-width: 10rem;
+    }
+
+    .description p{
+        width: 18rem;
+    }  
+}
+
+@media only screen and (max-width: 680px) {
+    
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .description h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .description p{
+        width: 100%;
+    }
+    .illustration{
+        width: 100%;
+    }
+}
+

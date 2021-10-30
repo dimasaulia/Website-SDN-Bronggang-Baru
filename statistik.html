@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- PRIMARY META TAG -->
+    <title>SDN BRONGGANG BARU</title>
+    <meta name="description" content="Website SDN Bronggang Baru">
+    <meta name="keywords" content="Sekolah Dasar, Bronggang Baru, Yogyakarta, Kemendikbud, Kampus Merdeka">
+    <meta name="author" content="SDN Bronggang Baru">
+
+    <!-- FACEBOOK META TAG -->
+    <meta property="og:title" content="SDN Bronggang Baru">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:description" content="Website Manajemen Data SDN Bronggang Baru">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.yourdomain.com">
+
+    <!-- TWITTER META TAG -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="SDN Bronggang Baru">
+    <meta property="twitter:description" content="Website Manajemen Data Siswa SDN Bronggang Baru">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- STYLESHEET -->
+    <link rel="icon" href="assets/images/Logo.png">
+    <link rel="stylesheet" href="assets/css/root.css">    
+    <link rel="stylesheet" href="assets/css/default.css">    
+    <link rel="stylesheet" href="assets/css/navbar.css">    
+    <link rel="stylesheet" href="assets/css/statistik.css">
+</head>
+
+<body>
+    <nav>
+        <h2>SDN Bronggang Baru</h2>
+        <a href="index.html">Beranda</a>
+    </nav>
+
+    <header>
+        <section class="description">
+            <h1>Statistik <span class="textBlue"> Data </span> Siswa</h1>
+            <p>Di halaman ini kamu bisa melihat statistik data siswa di database. Seperti berapa banyak siswa yang aktif atau berapa banyak perempuan dan laki-laki di database.</p>        </section>
+
+        <section class="illustration">
+            <img src="assets/icon/icon_statistik.png" alt="Ikon Tong Sampah Untuk Membantu User Mengapus Data">
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h1>Jumlah Siswa</h1>
+            <div class="container jumlahSiswa">
+                <div class="siswaAktif">
+                    <div class="illustration">
+                        <img src="assets/icon/icon_chart.png" alt="Ikon Chart">
+                    </div>
+                    <div class="description">
+                        <h2> <span class="textBlue"> Siswa </span> <span class="textBlack"> Aktif </span> </h2>
+                        <h1>350</h1>
+                    </div>
+                </div>
+                <div class="totalSiswa">
+                    <div class="description">
+                        <h1> <span class="textBlack"> Seluruh </span> <span class="textBlue"> Siswa Di </span> <span class="textBlack"> Database </span> </h1>
+                        <h1>750</h1>
+                    </div>
+                    <div class="illustration">
+                        <img src="assets/icon/icon_lihat_semua.png" alt="Ikon Database">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Gender Siswa</h1>
+            <div class="container genderSiswa">
+                <div class="male">
+                    <img src="assets/icon/icon_male.png" alt="Ikon Laki-laki">
+                    <div>
+                        <h2>Laki-laki</h2>
+                        <h1>200</h1>
+                    </div>
+                </div>
+
+                <div class="female">
+                    <img src="assets/icon/icon_female.png" alt="Ikon Perempuan">
+                    <div>
+                        <h2>Perempuan</h2>
+                        <h1>150</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Tahun Masuk Siswa</h1>
+            <div class="container tahunSiswa">
+                <script>
+                    for (let index = 0; index < 20; index++) {
+                        document.write(`                <div class="box">
+                    <img src="assets/icon/icon_calender.png" alt="Ikon Kalender">
+                    <h3>2006</h3>
+                    <hr>
+                    <h1>350</h1>
+                    <h4>Siswa</h4>
+                </div>`);
+                        
+                    }
+                </script>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -26,6 +26,17 @@
     font-weight: bold;   
 }
 
+body::-webkit-scrollbar{
+    width: 5px;
+}
+body::-webkit-scrollbar-track{
+    background: var(--backgroundColorTwo);
+}
+  
+body::-webkit-scrollbar-thumb{
+    background: var(--textColorThree);
+}
+
 html , body{
     margin: 0px;
     padding: 0px;
@@ -33,6 +44,10 @@ html , body{
     font-family: Quicksand, Arial;
     background-color: var(--backgroundColorOne);
     /* background: pink; */
+}
+
+img{
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -49,10 +64,6 @@ p, a, ul, li{
     padding: 0;
     color: var(--textColorOne);
     font-weight: normal;
-}
-
-.textBlue{
-    color: var(--textColorTwo);
 }
 
 /* MOBILE */

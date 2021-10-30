@@ -1,0 +1,149 @@
+main{
+    display: flex;
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    /* background: pink; */
+}
+
+.form-login{
+    display: flex;
+    width: 25%;
+    min-width: 350px;
+    height: 100vh;
+    background: #8e7efe;
+    color: var(--backgroundColorOne);
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    z-index: 2;
+}
+
+.form-login label{
+    margin-bottom: 0.5rem;
+}
+
+.form-login h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--backgroundColorOne);
+}
+
+.form-login p, a{
+    font-size: 15px;
+    margin-top: 1rem;
+    color: var(--backgroundColorOne);
+}
+.form-login label{
+    display: block;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+input[type=submit]:hover{
+    background: var(--textColorTwo);
+    color : var(--backgroundColorOne);
+    cursor: pointer;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+    border-style: none;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.illustration{
+    padding: 0 5px;
+    width: 75%;
+    height: 100vh;
+    background-image: url("/assets/images/Login.jpg");
+    background-color: var(--textColorOne);
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.form-login::-webkit-scrollbar{
+    width: 5px;
+}
+.form-login::-webkit-scrollbar-track{
+    background: var(--backgroundColorTwo);
+}
+  
+.form-login::-webkit-scrollbar-thumb{
+    background: var(--textColorThree);
+}
+
+.illustration p{
+    color: var(--backgroundColorOne);
+    position: absolute;
+    bottom: 15px;
+}
+
+@media only screen and (max-width: 780px) {
+    input[type=text], input[type=password] {
+        margin-bottom: 10px;
+    }
+
+    .form-login{
+        overflow-y: scroll;
+    }
+
+    .form-login label{
+        margin-bottom: 5px;
+    }
+
+    input[type=submit]{
+        margin-top: 15px;
+    }  
+    
+}
+
+/* MOBILE */
+@media only screen and (max-width: 580px) {
+    
+    .form-login{
+        width: 100%;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form{
+        overflow-y: hidden;
+    }
+
+    .illustration{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,161 @@
+main{
+    width: 90%;
+    margin: 5rem auto;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-around;
+}
+
+.container img{
+    width: 100%;
+}
+
+/* TOTAL SISWA */
+
+.siswaAktif{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 25%;
+    background: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+}
+
+.siswaAktif .illustration{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.siswaAktif h1{
+    font-size: 2.75rem;
+}
+
+.totalSiswa{
+    border-radius: 1rem;
+    display: flex;
+    width: 65%;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: var(--backgroundColorTwo);
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+.totalSiswa .description{
+    width: 70%;
+}
+
+.totalSiswa .illustration{
+    display: flex;
+    width: 30%;
+    margin: 0;
+}
+
+.textBlack{
+    opacity: 0.65;
+}
+
+/* GENDER SISWA */
+.male, .female{
+    display: flex;
+    width: 45%;
+    background-color: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.male img, .female img{
+    width: 20%;
+}
+
+/* TAHUN SISWA */
+.tahunSiswa{
+    flex-flow: wrap;
+}
+
+.box{
+    width: 12%;
+    margin: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    align-items: center;
+    background-color: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    box-sizing: border-box;
+    min-width: 140px;
+}
+
+.box img{
+    width: 30%;
+    opacity: 0.75;
+}
+
+hr{
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 680px) {
+    /* JUMLAH SISWA */
+    .jumlahSiswa{
+        width: 90%;
+        margin: 2rem auto 0 auto;
+        flex-direction: column;
+    }
+    
+    .siswaAktif, .totalSiswa{
+        width: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+    /* GENDER */
+    .genderSiswa{
+        width: 90%;
+        margin: 2rem auto 0 auto;
+        flex-direction: column;
+    }
+    .male, .female{
+        width: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+    /* TAHUN SISWA */
+    .tahunSiswa{
+        margin: 2rem auto 0 auto;
+        width: 90%;
+    }
+
+    .box{
+        min-width: 125px;
+    }
+
+    .box:nth-child(odd){
+        margin: 0 0 2rem 1rem;
+    }
+
+    .box:nth-child(even){
+        margin: 0 1rem 2rem 0;
+    }
+    
+}
+
