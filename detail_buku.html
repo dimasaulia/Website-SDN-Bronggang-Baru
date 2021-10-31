@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/data_list.css">
+    <link rel="stylesheet" href="assets/css/tambah_data.css">
+    <link rel="stylesheet" href="assets/css/detail_data.css">
 </head>
 
 <body>
@@ -103,72 +104,84 @@
         </menu>
     </nav>
 
-    <header>
+    <header class="mb-2">
         <section class="description">
-            <h1>Edit <span class="textBlue"> Data </span> Siswa</h1>
-            <p>Mari lihat seluruh data siswa!
-                Di halaman ini anda dapat melihat seluruh data siswa
-                yang tersimpan dalam database. Anda bisa menekan menu edit
-                untuk memperbaharui data siswa tersebut.</p>
+            <h1><span class="textBlue"> Detail </span> Buku </h1>
+            <p>
+                Mari lihat detail data buku!
+                Di halaman ini anda dapat melihat detail data sebuah
+                buku yang tersimpan di database.
+            </p>
         </section>
 
         <section class="illustration">
-            <img src="assets/icon/icon_edit.png" alt="Ikon Tong Sampah Untuk Membantu User Mengapus Data">
+            <img src="assets/icon/icon_perpustakaan.png" alt="Ikon Untuk Melihat Semua Data">
         </section>
     </header>
 
-    <main>
-        <section class="tableHead">
-            <h2>Tabel Siswa</h2>
-            <ul>
-                <li class="nama">
-                    <h4>Nama Siswa</h4>
-                </li>
-                <li class="tempatLahir">
-                    <h4>Tempat Lahir</h4>
-                </li>
-                <li class="tanggalLahir">
-                    <h4>Tanggal Lahir</h4>
-                </li>
-                <li class="gender">
-                    <h4>Gender</h4>
-                </li>
-                <li class="aksi">
-                    <h4>Aksi</h4>
-                </li>
-            </ul>
-        </section>
 
-        <script>
-            for (let index = 0; index < 10; index++) {
-                document.write(`
-                    <section class="tableData">
-                        <ul>
-                            <li class="nama">
-                                <h4>Bela Nur Fania</h4>
-                            </li>
-                            <li class="tempatLahir">
-                                <h4>Sukamara</h4>
-                            </li>
-                            <li class="tanggalLahir">
-                                <h4>7 Maret 2001</h4>
-                            </li>
-                            <li class="gender">
-                                <h4>Perempuan</h4>
-                            </li>
-                            <li class="aksi">
-                                <a href="ubah_data.html" class="helpEdit"><img alt="Ikon Edit Data"
-                                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry-2.png" /></a>
-                            </li>
-                        </ul>
-                    </section>
-                `);
-            }
-        </script>
+    <div class="bigForm">
+        <h1 class="info">Data Buku</h1>
+        <div class="formWraper">
+            <div class="individualForm">
+                <label for="judul">Judul Buku</label>
+                <h3>Aneka Kreasi dari Bambu</h3>
+            </div>
 
-    </main>
+            <div class="individualForm">
+                <label for="pengarang">Pengarang Buku</label>
+                <h3>Bagas Shinugi</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="penerbit">Penerbit Buku</label>
+                <h3>PT Mediantara Semesta</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="tahunTerbit">Tahun Terbit Buku</label>
+                <h3>2010</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="ukuran">Ukuran Buku</label>
+                <h3>27*18</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="jumlah">Jumlah Buku</label>
+                <h3>45</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="sumber">Sumber</label>
+                <h3>DAK</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="tanggal">Tanggal</label>
+                <h3>23/10/2018</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="nomorInventaris">Nomor Inverntari</label>
+                <h3>696969</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="bigForm">
+        <h1 class="info">Catatan</h1>
+        <div class="textWrapper">
+            <label>Berisikan Catatan Khusus Untuk Siswa</label>
+            <h3 class="detailData"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur, quod
+                molestiae quasi dolorem odit commodi exercitationem at illum numquam beatae voluptas, veniam labore
+                fugiat corrupti ex, non necessitatibus enim. </h3>
+        </div>
+    </div>
 
 </body>
+<script src="assets/scripts/tambah_data.js"></script>
 <script src="assets\scripts\navbar.js"></script>
 
 </html>

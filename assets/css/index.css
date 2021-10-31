@@ -1,35 +1,35 @@
 /* HEADER */
-header{
-    width:95%;
+header {
+    width: 95%;
     height: 25rem;
     max-width: 1450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto 0  auto;
+    margin: 3rem auto 0 auto;
     /* background: pink; */
     box-shadow: none;
     background-color: var(--backgroundColorOne);
 }
 
-header p{
-    width:60%;
-    text-align:center;
+header p {
+    width: 60%;
+    text-align: center;
     line-height: 1.6;
     margin: 0.75rem 0;
 }
 
-.inputWrapper{
-    position:relative;
+.inputWrapper {
+    position: relative;
     /* background: pink; */
     width: 45rem;
     display: flex;
     align-items: center;
 }
 
-input[type=text]{
-    position:relative;
+input[type=text] {
+    position: relative;
     margin: 20px 0;
     width: 100%;
     height: 45px;
@@ -40,25 +40,25 @@ input[type=text]{
     box-shadow: var(--shadow);
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     border-style: none;
     outline-offset: 0px;
     outline: none;
 }
 
-#ikon{
+#ikon {
     display: block;
     opacity: 0.5;
     position: absolute;
     right: 1rem;
 }
 
-#cari{
+#cari {
     display: none;
 }
 
 /* MAIN */
-.container{
+.container {
     display: flex;
     width: 95%;
     margin: 0 auto 2rem auto;
@@ -68,30 +68,32 @@ input[type=text]:focus{
     box-sizing: border-box;
 }
 
-.item{
+.item {
+    align-items: center;
+    background: var(--backgroundColorTwo);
     border-radius: 2rem;
     box-shadow: var(--shadow);
-    width: 15rem;
-    height: 15rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background: var(--backgroundColorTwo);
+    height: 15rem;
+    justify-content: center;
     margin: 1.5rem;
+    padding: 1rem;
+    width: 15rem;
+    box-sizing: border-box;
 }
 
-.item img{
+.item img {
     display: block;
     max-width: 60%;
 }
 
 @media only screen and (max-width: 980px) {
-    .inputWrapper{
+    .inputWrapper {
         width: 30rem;
-    }  
+    }
 
-    .item{
+    .item {
         width: 12rem;
         height: 12rem;
         margin: 1.75rem;
@@ -100,7 +102,7 @@ input[type=text]:focus{
 }
 
 @media only screen and (max-width: 880px) {
-    .item{
+    .item {
         width: 10rem;
         height: 10rem;
         margin: 1rem;
@@ -109,14 +111,15 @@ input[type=text]:focus{
 }
 
 @media only screen and (max-width: 680px) {
-    .inputWrapper{
+    .inputWrapper {
         width: 20rem;
-    }  
-    .item{
+    }
+
+    .item {
         border-radius: 1.25rem;
         width: 9.5rem;
         height: 9.5rem;
-        margin: .5rem;
+        margin: 0.75rem .5rem;
     }
-    
+
 }

@@ -18,5 +18,8 @@
 .buttonCancel:hover {
     opacity: 1;
     background: var(--textColorTwo);
+}
 
+.individualForm {
+    margin-bottom: 1.5rem;
 }

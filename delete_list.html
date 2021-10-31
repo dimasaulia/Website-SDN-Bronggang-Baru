@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- PRIMARY META TAG -->
     <title>SDN BRONGGANG BARU</title>
     <meta name="description" content="Website SDN Bronggang Baru">
@@ -22,27 +23,92 @@
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://www.dimasaulia.github.io">
     <meta property="twitter:title" content="SDN Bronggang Baru">
-    <meta property="twitter:description" content="Website Manajemen Data Siswa SDN Bronggang Baru - Kampus Mengajar 2021">
-    <meta property="twitter:image"
-        content="assets/images/Logo.png">
+    <meta property="twitter:description"
+        content="Website Manajemen Data Siswa SDN Bronggang Baru - Kampus Mengajar 2021">
+    <meta property="twitter:image" content="assets/images/Logo.png">
     <!-- STYLESHEET -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="icon" href="assets/images/Logo.png">
-    <link rel="stylesheet" href="assets/css/root.css">  
-    <link rel="stylesheet" href="assets/css/default.css">  
-    <link rel="stylesheet" href="assets/css/navbar.css">  
-    <link rel="stylesheet" href="assets/css/data_list.css">  
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/data_list.css">
 </head>
 
 <body>
     <nav>
-        <h2>SDN Bronggang Baru </h2>
-        <a href="index.html">Beranda</a>
+        <a href="index.html">
+            <h2> SDN Bronggang Baru</h2>
+        </a>
+        <div id="iconMenu">
+            <p>Menu</p>
+            <img src="https://img.icons8.com/material-sharp/24/000000/circled-chevron-down.png" alt="Menu Drop Down" />
+        </div>
+        <menu class="close">
+            <div class="category">
+                <h4>Manajemen Siswa</h4>
+                <div class="items">
+                    <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-User-essential-collection-bearicons-glyph-bearicons.png"
+                        alt="Ikon List Data Siswa" />
+                    <a href="data_list.html">Data Siswa</a>
+                </div>
+                <div class="items">
+                    <img src="assets/icon/icon_add_student.png" alt="Icon Menu Menambah Siswa">
+                    <a href="tambah_data.html">Tambah Data Siswa</a>
+                </div>
+            </div>
+            <div class="category">
+                <h4>Manajemen Buku</h4>
+                <div class="items">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/book.png"
+                        alt="Ikon Untuk Melihat Koleksi Buku" />
+                    <a href="data_list_buku.html">Data Buku</a>
+                </div>
+                <div class="items">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/add-book.png"
+                        alt="Ikon Menambah Buku Di Perpustakaan" />
+                    <a href="tambah_data_buku.html">Tambah Data Buku</a>
+                </div>
+            </div>
+            <div class="category">
+                <div class="items">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/book-stack.png" alt="Ikon Perpustakaan" />
+                    <a href="peminjam_list.html">Data Peminjaman</a>
+                </div>
+                <div class=" items">
+                    <img src="assets/icon/icon_add_libraray.png" alt="Ikon Untuk Menambah Peminjaman Buku">
+                    <a href="tambah_peminjaman_buku.html">Tambah Data Peminjaman</a>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="items">
+                    <div class="imageHolder">
+                        <img src="assets/images/profil_default.png" alt="Foto Avatar User">
+                    </div>
+                    <div class="text">
+                        <h3>Nama Username</h3>
+                        <a href="admin_profil.html">Atur Profil</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class=" items">
+                    <img src="assets/icon/icon_logout.png" alt="Ikon Untuk Logout" />
+                    <a href="" class="textRed">Keluar</a>
+                </div>
+            </div>
+
+        </menu>
     </nav>
 
     <header>
         <section class="description">
             <h1>Hapus <span class="textBlue"> Data </span> Siswa</h1>
-            <p>Mari lihat seluruh data siswa! Di halaman ini anda dapat mengahpus data siswa yang tersimpan dalam database. Caranya tekan menu hapus maka anda akan diarahkan ke menu konfirmasi hapus data.</p>        </section>
+            <p>Mari lihat seluruh data siswa! Di halaman ini anda dapat mengahpus data siswa yang tersimpan dalam
+                database. Caranya tekan menu hapus maka anda akan diarahkan ke menu konfirmasi hapus data.</p>
+        </section>
 
         <section class="illustration">
             <img src="assets/icon/icon_hapus.png" alt="Ikon Tong Sampah Untuk Membantu User Mengapus Data">
@@ -53,11 +119,21 @@
         <section class="tableHead">
             <h2>Tabel Siswa</h2>
             <ul>
-                <li class="nama"><h4>Nama Siswa</h4></li>
-                <li class="tempatLahir"><h4>Tempat Lahir</h4></li>
-                <li class="tanggalLahir"><h4>Tanggal Lahir</h4></li>
-                <li class="gender"><h4>Gender</h4></li>
-                <li class="aksi"><h4>Aksi</h4></li>
+                <li class="nama">
+                    <h4>Nama Siswa</h4>
+                </li>
+                <li class="tempatLahir">
+                    <h4>Tempat Lahir</h4>
+                </li>
+                <li class="tanggalLahir">
+                    <h4>Tanggal Lahir</h4>
+                </li>
+                <li class="gender">
+                    <h4>Gender</h4>
+                </li>
+                <li class="aksi">
+                    <h4>Aksi</h4>
+                </li>
             </ul>
         </section>
 
@@ -83,5 +159,6 @@
     </main>
 
 </body>
+<script src="assets\scripts\navbar.js"></script>
 
 </html>

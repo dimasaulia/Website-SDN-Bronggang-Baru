@@ -26,13 +26,16 @@
     <meta property="twitter:description"
         content="Website Manajemen Data Siswa SDN Bronggang Baru - Kampus Mengajar 2021">
     <meta property="twitter:image" content="assets/images/Logo.png">
+
     <!-- STYLESHEET -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="icon" href="assets/images/Logo.png">
     <link rel="stylesheet" href="assets/css/root.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/data_list.css">
+    <link rel="stylesheet" href="assets/css/tambah_data.css">
+    <link rel="stylesheet" href="assets/css/detail_data.css">
+
 </head>
 
 <body>
@@ -103,72 +106,52 @@
         </menu>
     </nav>
 
-    <header>
+    <header class="mb-2">
         <section class="description">
-            <h1>Edit <span class="textBlue"> Data </span> Siswa</h1>
-            <p>Mari lihat seluruh data siswa!
-                Di halaman ini anda dapat melihat seluruh data siswa
-                yang tersimpan dalam database. Anda bisa menekan menu edit
-                untuk memperbaharui data siswa tersebut.</p>
+            <h1>Detail <span class="textBlue"> Peminjam </span> Buku </h1>
+            <p>
+                Di halaman ini anda dapat melihat detail peminjaman yang dilakukan seorang
+                siswa.
+            </p>
         </section>
 
         <section class="illustration">
-            <img src="assets/icon/icon_edit.png" alt="Ikon Tong Sampah Untuk Membantu User Mengapus Data">
+            <img src="assets/icon/icon_tambah.png" alt="Ikon Untuk Melihat Semua Data">
         </section>
     </header>
 
-    <main>
-        <section class="tableHead">
-            <h2>Tabel Siswa</h2>
-            <ul>
-                <li class="nama">
-                    <h4>Nama Siswa</h4>
-                </li>
-                <li class="tempatLahir">
-                    <h4>Tempat Lahir</h4>
-                </li>
-                <li class="tanggalLahir">
-                    <h4>Tanggal Lahir</h4>
-                </li>
-                <li class="gender">
-                    <h4>Gender</h4>
-                </li>
-                <li class="aksi">
-                    <h4>Aksi</h4>
-                </li>
-            </ul>
-        </section>
+    <div class="bigForm">
+        <h1 class="info">Data Buku</h1>
+        <div class="formWraper">
+            <div class="individualForm">
+                <label for="judul">Judul Buku</label>
+                <h3>Cara Memasak Air</h3>
+            </div>
 
-        <script>
-            for (let index = 0; index < 10; index++) {
-                document.write(`
-                    <section class="tableData">
-                        <ul>
-                            <li class="nama">
-                                <h4>Bela Nur Fania</h4>
-                            </li>
-                            <li class="tempatLahir">
-                                <h4>Sukamara</h4>
-                            </li>
-                            <li class="tanggalLahir">
-                                <h4>7 Maret 2001</h4>
-                            </li>
-                            <li class="gender">
-                                <h4>Perempuan</h4>
-                            </li>
-                            <li class="aksi">
-                                <a href="ubah_data.html" class="helpEdit"><img alt="Ikon Edit Data"
-                                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry-2.png" /></a>
-                            </li>
-                        </ul>
-                    </section>
-                `);
-            }
-        </script>
+            <div class="individualForm">
+                <label for="peminjam">Peminjam Buku</label>
+                <h3>Bela Nurfania</h3>
+            </div>
 
-    </main>
+            <div class="individualForm">
+                <label for="tanggalPeminjaman">Tanggal Peminjaman</label>
+                <h3>7 Maret 2021</h3>
+            </div>
 
+            <div class="individualForm">
+                <label for="tanggalPengembalian">Tanggal Pengembalian</label>
+                <h3>10 Maret 2021</h3>
+            </div>
+
+            <div class="individualForm">
+                <label for="status">STATUS</label>
+                <h3>Dipinjam</h3>
+            </div>
+
+        </div>
+    </div>
 </body>
+<script src="assets/scripts/peminjaman_buku.js"></script>
 <script src="assets\scripts\navbar.js"></script>
 
 </html>
