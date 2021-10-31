@@ -1,0 +1,22 @@
+.detailData {
+    margin-bottom: 1rem;
+}
+
+.textWrapper {
+    padding: 1rem 2rem;
+}
+
+.buttonDanger {
+    border-radius: 1rem;
+}
+
+.buttonCancel {
+    background: var(--textColorTwo);
+    opacity: 0.3;
+}
+
+.buttonCancel:hover {
+    opacity: 1;
+    background: var(--textColorTwo);
+
+}

@@ -61,17 +61,25 @@
             </ul>
         </section>
 
-        <section class="tableData">
-            <ul>
-                <li class="nama"><h4>Dimas Aulia</h4></li>
-                <li class="tempatLahir"><h4>Sukamara</h4></li>
-                <li class="tanggalLahir"><h4>10 Oktober 2000</h4></li>
-                <li class="gender"><h4>Laki-laki</h4></li>
-                <li class="aksi">
-                    <a href="" class="helpDelete" ><img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-trash-interface-kiranshastry-solid-kiranshastry.png" alt="Ikon Hapus"/></a>                    
-                </li>
-            </ul>
-        </section>
+        <script>
+            for (let index = 0; index < 10; index++) {
+                document.write(`
+                    <section class="tableData">
+                        <ul>
+                            <li class="nama"><h4>Bela Nur Fania</h4></li>
+                            <li class="tempatLahir"><h4>Sukamara</h4></li>
+                            <li class="tanggalLahir"><h4>7 Maret 2001</h4></li>
+                            <li class="gender"><h4>Perempuan</h4></li>
+                            <li class="aksi">
+                                <a href="konfirmasi_hapus.html" class="helpDelete" ><img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-trash-interface-kiranshastry-solid-kiranshastry.png" alt="Ikon Hapus"/></a>                    
+                            </li>
+                        </ul>
+                    </section>
+                `);
+            }
+        </script>
+
+
     </main>
 
 </body>

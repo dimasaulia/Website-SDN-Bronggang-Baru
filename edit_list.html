@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- PRIMARY META TAG -->
     <title>SDN BRONGGANG BARU</title>
     <meta name="description" content="Website SDN Bronggang Baru">
@@ -23,14 +24,15 @@
     <meta property="twitter:url" content="https://metatags.io/">
     <meta property="twitter:title" content="SDN Bronggang Baru">
     <meta property="twitter:description" content="Website Manajemen Data Siswa SDN Bronggang Baru">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- STYLESHEET -->
     <link rel="icon" href="assets/images/Logo.png">
-    <link rel="stylesheet" href="assets/css/root.css">  
-    <link rel="stylesheet" href="assets/css/default.css">  
-    <link rel="stylesheet" href="assets/css/navbar.css">  
-    <link rel="stylesheet" href="assets/css/data_list.css">  
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/data_list.css">
 </head>
 
 <body>
@@ -57,25 +59,51 @@
         <section class="tableHead">
             <h2>Tabel Siswa</h2>
             <ul>
-                <li class="nama"><h4>Nama Siswa</h4></li>
-                <li class="tempatLahir"><h4>Tempat Lahir</h4></li>
-                <li class="tanggalLahir"><h4>Tanggal Lahir</h4></li>
-                <li class="gender"><h4>Gender</h4></li>
-                <li class="aksi"><h4>Aksi</h4></li>
-            </ul>
-        </section>
-
-        <section class="tableData">
-            <ul>
-                <li class="nama"><h4>Dimas Aulia</h4></li>
-                <li class="tempatLahir"><h4>Sukamara</h4></li>
-                <li class="tanggalLahir"><h4>10 Oktober 2000</h4></li>
-                <li class="gender"><h4>Laki-laki</h4></li>
+                <li class="nama">
+                    <h4>Nama Siswa</h4>
+                </li>
+                <li class="tempatLahir">
+                    <h4>Tempat Lahir</h4>
+                </li>
+                <li class="tanggalLahir">
+                    <h4>Tanggal Lahir</h4>
+                </li>
+                <li class="gender">
+                    <h4>Gender</h4>
+                </li>
                 <li class="aksi">
-                    <a href="" class="helpEdit"><img alt="Ikon Edit Data" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry-2.png"/></a>                    
+                    <h4>Aksi</h4>
                 </li>
             </ul>
         </section>
+
+        <script>
+            for (let index = 0; index < 10; index++) {
+                document.write(`
+                    <section class="tableData">
+                        <ul>
+                            <li class="nama">
+                                <h4>Bela Nur Fania</h4>
+                            </li>
+                            <li class="tempatLahir">
+                                <h4>Sukamara</h4>
+                            </li>
+                            <li class="tanggalLahir">
+                                <h4>7 Maret 2001</h4>
+                            </li>
+                            <li class="gender">
+                                <h4>Perempuan</h4>
+                            </li>
+                            <li class="aksi">
+                                <a href="ubah_data.html" class="helpEdit"><img alt="Ikon Edit Data"
+                                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry-2.png" /></a>
+                            </li>
+                        </ul>
+                    </section>
+                `);
+            }
+        </script>
+
     </main>
 
 </body>

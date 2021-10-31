@@ -154,19 +154,19 @@ input[type=button] {
 }
 
 .buttonDanger {
-    width: 40%;
-    min-width: 105px;
-    height: 2.5rem;
-    display: flex;
-    background: var(--textColorRed);
-    font-size: 1rem;
-    color: var(--backgroundColorOne);
-    font-weight: bold;
-    cursor: pointer;
     align-items: center;
-    justify-content: center;
+    background: var(--textColorRed);
     border-radius: 0.5rem;
     box-sizing: border-box;
+    color: var(--backgroundColorOne);
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2.5rem;
+    justify-content: center;
+    min-width: 105px;
+    width: 40%;
 }
 
 input[type=button]:hover {
