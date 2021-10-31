@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY META TAG -->
+    <title>SDN BRONGGANG BARU</title>
+    <meta name="description" content="Website SDN Bronggang Baru">
+    <meta name="keywords" content="Sekolah Dasar, Bronggang Baru, Yogyakarta, Kemendikbud, Kampus Merdeka">
+    <meta name="author" content="SDN Bronggang Baru">
+
+    <!-- FACEBOOK META TAG -->
+    <meta property="og:title" content="SDN Bronggang Baru">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:description" content="Website Manajemen Data SDN Bronggang Baru">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.yourdomain.com">
+
+    <!-- TWITTER META TAG -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="SDN Bronggang Baru">
+    <meta property="twitter:description" content="Website Manajemen Data Siswa SDN Bronggang Baru">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+    <!-- STYLESHEET -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="icon" href="assets/images/Logo.png">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/tambah_data.css">
+</head>
+
+<body>
+    <nav>
+        <h2>SDN Bronggang Baru</h2>
+        <a href="index.html">Beranda</a>
+    </nav>
+
+    <header>
+        <section class="description">
+            <h1>Tambah <span class="textBlue"> Data </span> Siswa </h1>
+            <p>
+                Mari menambahkan data siswa!
+                Di halaman ini anda dapat menambahkan data siswa.
+                Isilah setiap kolom dengan data yang sesuai. Jangan
+                lupa untuk menyimpan dokumen, setelah pengisisan data.
+            </p>
+        </section>
+
+        <section class="illustration">
+            <img src="assets/icon/icon_setings.png" alt="Ikon Untuk Melihat Semua Data">
+        </section>
+    </header>
+
+    <form action="" method="POST">
+        <main>
+            <aside class="imageField">
+                <div class="imageProfil">
+                    <img src="assets/images/profil.png" id="fotoProfil" alt="Foto Profil Peserta Didik">
+                </div>
+                <div class="menu">
+                    <a id="hapus">
+                        <img src="assets/icon/icon_hapus_foto.png" alt="Ikon Untuk Menghapus Foto">
+                        <p>Hapus</p>
+                    </a>
+
+                    <a id="upload">
+                        <img src="assets/icon/icons_upload.png" alt="">
+                        <p>Upload Foto Baru</p>
+                    </a>
+                </div>
+            </aside>
+
+            <aside class="profil">
+                <h1 class="info">Data Pribadi</h1>
+                <div class="formInfoPribadi">
+                    <label for="nama">Nama Siswa</label>
+                    <input type="text" id="nama" name="nama">
+
+                    <label for="tempatLahir">Tempat Lahir</label>
+                    <input type="text" id="tempatLahir" name="tempatLahir">
+
+                    <label for="tanggalLahir">Tanggal Lahir</label>
+                    <input type="date" id="tanggalLahir" name="tanggalLahir">
+
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat">
+
+                    <label for="namaOrangTua">Nama Orang Tua</label>
+                    <input type="text" id="namaOrangTua" name="namaOrangTua">
+
+                    <label for="namaOrangTua">Gender</label>
+                    <div class="gender">
+                        <div class="radio">
+                            <input type="radio" value="Perempuan" id="perempuan" name="gender">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" value="Laki-laki" id="laki" name="gender">
+                            <label for="laki">Laki-laki</label>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="file" id="formFoto">
+            </aside>
+        </main>
+
+        <div class="bigForm">
+            <h1 class="info">Data Akademis</h1>
+            <div class="formWraper">
+                <div class="individualForm">
+                    <label for="nis">NIS</label>
+                    <input type="text" id="nis" name="nis">
+                </div>
+
+                <div class="individualForm">
+                    <label for="status">STATUS</label>
+                    <select id="status">
+                        <option value="Aktif">Aktif</option>
+                        <option value="Lulus">Lulus</option>
+                        <option value="Pindah">Pindah</option>
+                        <option value="Berhenti">Berhenti</option>
+                    </select>
+                </div>
+
+                <div class="individualForm">
+                    <label for="tahunMasuk">Tahun Masuk</label>
+                    <input type="date" id="tahunMasuk" name="tahunMasuk">
+                </div>
+
+                <div class="individualForm">
+                    <label for="tahunKeluar">Tahun Keluar</label>
+                    <input type="date" id="tahunKeluar" name="tahunKeluar">
+                </div>
+            </div>
+        </div>
+
+        <div class="bigForm">
+            <h1 class="info">Catatan</h1>
+            <div class="formWraper">
+                <textarea name="" id=""></textarea>
+            </div>
+        </div>
+
+        <div class="bigForm">
+            <input type="button" value="Simpan">
+            <a href="index.html" class="buttonDanger">Batal</a>
+        </div>
+    </form>
+</body>
+<script src="assets/scripts/tambah_data.js"></script>
+
+</html>

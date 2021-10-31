@@ -1,0 +1,303 @@
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 5rem auto 1rem auto;
+    width: 80%;
+}
+
+.imageField {
+    align-items: center;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.imageField .imageProfil img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.imageField .menu {
+    display: flex;
+    width: 100%;
+    /* background: blue; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: .75rem;
+}
+
+p {
+    font-weight: bold;
+}
+
+.imageField .menu img {
+    max-width: 2.5rem;
+}
+
+
+#hapus {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px dotted #DF2248;
+    border-radius: 0.75rem;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#hapus p {
+    color: #DF2248;
+}
+
+#upload {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px dotted #8A96FF;
+    border-radius: 0.75rem;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#upload p {
+    color: #8A96FF;
+}
+
+.profil {
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.info {
+    width: 100%;
+    background: var(--textColorTwo);
+    padding: 5px 2rem;
+    color: var(--backgroundColorTwo);
+    opacity: 0.5;
+}
+
+.formInfoPribadi {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+input[type=password],
+input[type=text],
+input[type=email],
+input[type=date],
+select {
+    width: 100%;
+    height: 2rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    padding: 5px 15px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    background: var(--backgroundColorTwo);
+    font-family: Quicksand;
+
+}
+
+input[type=password]:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=date]:focus,
+textarea:focus {
+    border-color: var(--textColorTwo);
+    outline-offset: 0px;
+    outline: none;
+}
+
+input[type=button] {
+    width: 40%;
+    min-width: 105px;
+    height: 2.5rem;
+    margin: 10px;
+    display: block;
+    border-radius: 0.5rem;
+    background: var(--textColorTwo);
+    border: none;
+    font-size: 1rem;
+    color: var(--backgroundColorOne);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttonDanger {
+    width: 40%;
+    min-width: 105px;
+    height: 2.5rem;
+    display: flex;
+    background: var(--textColorRed);
+    font-size: 1rem;
+    color: var(--backgroundColorOne);
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+input[type=button]:hover {
+    background: var(--textColorThree);
+}
+
+.buttonDanger:hover {
+    background: #b81334;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    resize: none;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-family: Quicksand;
+    border-radius: 0.5rem;
+}
+
+.radio {
+    display: flex;
+}
+
+.gender {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+}
+
+.individualForm {
+    width: 48%;
+}
+
+.bigForm {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--backgroundColorTwo);
+    box-shadow: var(--shadow);
+    margin: 0 auto 2rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.bigForm:last-child {
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    box-shadow: none;
+}
+
+.formWraper {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#formFoto {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    .profil .illustration img {
+        max-width: 110%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    #hapus,
+    #upload {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0.5rem 0;
+    }
+
+    #hapus p,
+    #upload p {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+    main {
+        flex-direction: column;
+    }
+
+    .imageField {
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    #hapus,
+    #upload {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0.5rem 0;
+    }
+
+    #hapus p,
+    #upload p {
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .profil {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .profil .illustration img {
+        max-width: 120%;
+    }
+
+    .individualForm {
+        width: 100%;
+    }
+
+}

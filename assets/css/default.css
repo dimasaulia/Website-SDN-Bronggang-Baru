@@ -10,7 +10,7 @@
 }
 
 .textRed {
-    color: #DF2248;
+    color: var(--textColorRed);
 }
 
 .active {
